@@ -1,6 +1,6 @@
 class Solution {
     public int hammingWeight(int n) {
-     // StringBuilder result=new StringBuilder();
+     StringBuilder result=new StringBuilder();
       int count=0;
       while(n>0){
         int remainder=n%2;
