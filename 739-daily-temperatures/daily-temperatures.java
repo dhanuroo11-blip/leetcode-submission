@@ -9,8 +9,6 @@ class Solution {
         Stack<Integer> stack = new Stack<>();
 
         for (int i = 0; i < n; i++) {
-
-            // resolve previous colder days
             while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
                 int prev = stack.pop();
                 ans[prev] = i - prev;
