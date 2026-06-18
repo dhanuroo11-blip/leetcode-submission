@@ -16,11 +16,13 @@ class Solution {
         int arr2[]=new int[10];
         int t1=n;
         while(t1!=0){
-            arr1[t1%10]++;
+            int dig=t1%10;
+            arr1[dig]++;
             t1/=10;
         }
         while(sum!=0){
-            arr2[sum%10]++;
+            int dig=sum%10;
+            arr2[dig]++;
             sum/=10;
         }
         return Arrays.equals(arr1,arr2);
