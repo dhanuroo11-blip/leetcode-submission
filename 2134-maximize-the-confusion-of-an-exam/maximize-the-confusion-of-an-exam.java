@@ -8,7 +8,7 @@ class Solution {
         for(int i=0;i<n;i++){
             if(answerKey.charAt(i)=='T') countt++;
             else countf++;
-            while(i-left+1-countt>k&&i-left+1-countf>k){
+            while(countt>k&&countf>k){
                 if(answerKey.charAt(left)=='T') countt--;
                 else countf--;
                 left++;
