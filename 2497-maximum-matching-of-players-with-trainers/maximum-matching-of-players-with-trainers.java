@@ -8,7 +8,8 @@ class Solution {
         if(players[i]<=trainers[j]){
             ans++;
             i++;
-        }
+            j++;
+        }else
         j++;
        }
         return ans;
