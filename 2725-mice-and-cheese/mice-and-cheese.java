@@ -8,8 +8,8 @@ class Solution {
             sum+=reward2[i];
         }
        Arrays.sort(diff);
-       for(int i=0;i<k;i++){
-        sum+=diff[n-1-i];
+       for(int i=n-1;i>=n-k;i--){
+        sum+=diff[i];
        }
       return sum;
     }
