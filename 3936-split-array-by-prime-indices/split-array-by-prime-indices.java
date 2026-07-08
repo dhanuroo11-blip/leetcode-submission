@@ -9,7 +9,7 @@ class Solution {
             found=false;
         }
         else{
-            for(int j=2;j<=Math.sqrt(i);j++){
+            for(int j=2;j*j<=i;j++){
                 if(i%j==0){
                     found=false;
                     break;
