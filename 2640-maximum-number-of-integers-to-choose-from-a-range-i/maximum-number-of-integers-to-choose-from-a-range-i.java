@@ -9,9 +9,9 @@ class Solution {
         int count=0;
         for(int i=1;i<=n;i++){
             if(set.contains(i)) continue;
-                
+               
                 if(sum+i>maxSum) break;
-                sum+=i;
+                 sum+=i;
                 count++;
             
            
