@@ -1,20 +1,16 @@
 class Solution {
     public int maxCount(int[] banned, int n, int maxSum) {
         int b=banned.length;
-        Set<Integer> set=new HashSet<>();
+        int arr[]=new int[10001];
         for(int i=0;i<b;i++){
-            set.add(banned[i]);
+            arr[banned[i]]=1;
         }
-        int sum=0;
         int count=0;
+        int sum=0;
         for(int i=1;i<=n;i++){
-            if(set.contains(i)) continue;
-               
-                if(sum+i>maxSum) break;
-                 sum+=i;
-                count++;
-            
-           
+            if(arr[i]==1) continue;
+            sum+=i;
+            if(sum<=maxSum) count++;
         }
         return count;
     }
